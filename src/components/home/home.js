@@ -37,7 +37,6 @@ const Home = () => {
       PageSize: pageSize,
       PageNumber: pageNumber,
     },
-    // fetchPolicy: "no-cache",
     onCompleted: (data) => data,
   });
 
@@ -666,7 +665,7 @@ const Home = () => {
           {/* <!-- Slider Single Item Start --> */}
           <div
             className="slider-height-6 d-flex align-items-start justify-content-start bg-img"
-            style={{backgroundImage: "url('./assets/images/slider-image/sample-5.jpg')"}}
+            style={{ height: "540" ,backgroundImage: `url(assets/images/slider-image/sample-5.jpg)`}}
           >
             <div className="container">
               <div className="slider-content-5 slider-animated-1 text-left">
