@@ -34,7 +34,10 @@ import {
   SaleManagement,
   VendorManagement,
   OrderManagement,
-  OrderDetail
+  OrderDetail,
+  Shop,
+  Checkout,
+  Compare
 } from "./components";
 import ProtectedRoutes from "./protectedRoutes";
 import AdminRoutes from "./adminRoutes";
@@ -93,6 +96,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/shop" element={<Shop />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
@@ -101,8 +105,10 @@ function App() {
             <Route path="/product_detail/:id" element={<ProductDetails />} />
             <Route path="/filter_product/:name" element={<FilteredProduct />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/compare" element={<Compare />} />
+            <Route path="/userprofile" element={<CustomerProfile />} />
             <Route element={<ProtectedRoutes isAuthen={isAuth} />}>
-              <Route path="/userprofile" element={<CustomerProfile />} />
               <Route path="/editProfile" element={<EditProfile />} />
               <Route path="/createProfile" element={<CreateProfile />} />
             </Route>

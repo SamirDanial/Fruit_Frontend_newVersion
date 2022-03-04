@@ -29,3 +29,6 @@ export { default as VendorManagement } from "./adminPanel/vendorManagement/vendo
 export {default as CategorisedProduct} from './categorisedProduct/categorisedProduct';
 export {default as OrderManagement} from './adminPanel/orderManagement/orderManagement';
 export {default as OrderDetail} from './adminPanel/orderManagement/orderDetail/orderDetail';
+export {default as Shop} from './shop/shop';
+export {default as Checkout} from './checkout/checkout';
+export {default as Compare} from './compare/compare';
